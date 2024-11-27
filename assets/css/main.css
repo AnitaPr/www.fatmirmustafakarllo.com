@@ -194,13 +194,13 @@ h6 {
   }
   .video{
     z-index: -100;
-    position: fixed;
+    position: flex;
        right: 0;
        left: 0;
        bottom: 0;
        min-width: 100%;
        min-height: 100%;
-    filter: brightness(70%);
+    filter: brightness(30%);
   }
 
   #video-bg{
@@ -215,6 +215,7 @@ h6 {
        bottom: 0;
        min-width: 100%;
        min-height: 100%;
+      filter: brightness(30%);
    }
  
   .image-container {
