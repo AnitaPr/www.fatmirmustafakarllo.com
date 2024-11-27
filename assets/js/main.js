@@ -22,13 +22,6 @@
   document.addEventListener('scroll', toggleScrolled);
   window.addEventListener('load', toggleScrolled);
 
-    document.addEventListener("DOMContentLoaded", () => {
-    const video = document.querySelector("video");
-    video.onerror = () => {
-      document.querySelector(".video").style.background = "url('fallback.jpg') center/cover no-repeat";
-    };
-  });
-
 
   /**
    * Mobile nav toggle
