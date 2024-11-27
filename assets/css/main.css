@@ -194,7 +194,7 @@ h6 {
   }
   .video{
     z-index: -100;
-    position: flex;
+    position: fixed;
        right: 0;
        left: 0;
        bottom: 0;
