@@ -333,7 +333,7 @@ h6 {
 __________________________
 /* Mobile Navigation */
 _____________________________
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
     font-size: 28px;
@@ -341,22 +341,22 @@ _____________________________
     margin-right: 5px;
     cursor: pointer;
     transition: color 0.3s;
-  }
+  } */
 
-  .navmenu {
+/*   .navmenu {
     padding: 10px;
     display: block;
     position: fixed;
     top: 0;
     left: 0;
     width: 100px; /* Adjust as needed */
-    height: 100%; /* Full height for the left sidebar */
-    background-color: var(--background-color); /* Use your desired background color */
-    z-index: 1000; /* Ensure it appears above other elements */
-    overflow-y: auto; /* Scroll if content exceeds viewport height */
-  }
+/*     height: 100%; /* Full height for the left sidebar */ 
+/*     background-color: var(--background-color); /* Use your desired background color */
+/*     z-index: 1000; /* Ensure it appears above other elements */
+/*     overflow-y: auto; /* Scroll if content exceeds viewport height */ 
+/*   } */
 
-  .navmenu ul {
+/*   .navmenu ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -366,8 +366,8 @@ _____________________________
     margin: 0;
     padding: 10px 20px;
   }
-
-  .navmenu a {
+ */
+/*   .navmenu a {
     color: var(--nav-color);
     font-size: 15px;
     text-decoration: none;
@@ -383,16 +383,16 @@ _____________________________
     font-weight: bold;
     color: var(--nav-hover-color);
   }
-
-  .mobile-nav-active .navmenu {
+ */
+/*   .mobile-nav-active .navmenu {
     left: 0; /* Make the menu visible in mobile mode */
-    transition: 0.3s;
-  }
-
+/*     transition: 0.3s; */
+/*   } */ 
+/* 
   .mobile-nav-active .navmenu ul {
     display: block;
   }
-}
+} */
 
   
 
@@ -407,7 +407,6 @@ _____________________________
 /*   .mobile-nav-active .navmenu>ul {
     display: block;
   } */
-}
 
 /*--------------------------------------------------------------
 # Global Footer
