@@ -346,10 +346,10 @@ _____________________________
   .navmenu {
     padding: 10px;
     display: block;
-    position: fixed; /* Ensures the menu stays on the left */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 200px; /* Adjust as needed */
+    width: 100px; /* Adjust as needed */
     height: 100%; /* Full height for the left sidebar */
     background-color: var(--background-color); /* Use your desired background color */
     z-index: 1000; /* Ensure it appears above other elements */
