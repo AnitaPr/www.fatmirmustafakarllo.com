@@ -208,7 +208,7 @@ h6 {
 
   @media screen and (min-width: 900px) .video{
     z-index: -100;
-    position: fixed;
+    position: flex;
        right: 0;
        left: 0;
        bottom: 0;
