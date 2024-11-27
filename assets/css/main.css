@@ -330,8 +330,9 @@ h6 {
     color: var(--nav-hover-color);
   }
 
-
+__________________________
 /* Mobile Navigation */
+_____________________________
 
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
@@ -344,7 +345,7 @@ h6 {
   }
 
   .navmenu {
-    padding: 20;
+    padding: 10;
     display: list-item;
   }
 
@@ -396,23 +397,33 @@ h6 {
     transition: 0.3s;
   }
 
+  .navmenu>ul>li>a:before {
+    content: "";
+    position: left;
+    width: 100%;
+    height: 2px;
+    bottom: 6px;
+    left: 20px;
+    background-color: var(--nav-hover-color);
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
     background-color: var(--accent-color);
     color: var(--contrast-color);
   }
 
-  .navmenu a:hover,
-  .navmenu .active,
-  .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+  .navmenu a:hover:before,
+  .navmenu li:hover>a:before,
+  .navmenu .active:before {
+    visibility: visible;
+    width: 100%;
   }
-
   .navmenu .active i,
   .navmenu .active:focus i {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
-    transform: rotate(180deg);
+    color: var(--nav-hover-color);
   }
 
 
@@ -421,26 +432,26 @@ h6 {
   }
 
   .mobile-nav-active .mobile-nav-toggle {
-    color: #fff;
-    position: absolute;
-    font-size: 32px;
-    top: 15px;
-    right: 15px;
-    margin-right: 0;
-    z-index: 9999;
+    width: 100px;
+    float: top;
+    display: inline;
+    margin: 0;
+    padding: 50;
+    margin-top: 0px;
+    z-index: -1;
   }
 
-  .mobile-nav-active .navmenu {
+/*   .mobile-nav-active .navmenu {
     position: fixed;
     overflow: hidden;
     inset: 0;
     background: rgba(33, 37, 41, 0.8);
     transition: 0.3s;
-  }
+  } */
 
-  .mobile-nav-active .navmenu>ul {
+/*   .mobile-nav-active .navmenu>ul {
     display: block;
-  }
+  } */
 }
 
 /*--------------------------------------------------------------
